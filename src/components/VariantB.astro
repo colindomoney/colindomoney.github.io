@@ -1,0 +1,72 @@
+---
+import { profile, links, icons } from '@/data/links';
+import CurrentlyBlock from './CurrentlyBlock.astro';
+
+const chevron = icons.Chevron;
+---
+
+<div class="variant-b-root page">
+  <div class="vb">
+
+    <!-- Left column: hero -->
+    <div class="vb__hero rise" data-d="1">
+
+      <div class="vb__overline">Bio · 2026</div>
+
+      <h1 class="vb__name">
+        Colin<br />Domoney
+        <em>— the diplomat<br />of ai security.</em>
+      </h1>
+
+      <p class="vb__role">
+        <span class="vb__mark"></span>
+        Thirty years in cybersecurity. Currently making the case for{' '}
+        <span style="color: var(--teal-700);">Secure Vibecoding</span>.
+      </p>
+
+      <div class="vb__headshot-row rise" data-d="2">
+        <div class="vb__headshot">
+          <img src="/headshot.jpg" alt="Colin Domoney" width="72" height="72" />
+        </div>
+        <p class="vb__bio">
+          A glass-half-full take on AI-assisted development — honest about the risk,
+          optimistic about the craft. <em>Author, advisor, speaker.</em>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right column: links + currently -->
+    <div class="vb__col-right">
+
+      <div class="rise" data-d="3">
+        <div class="vb__section-label">Where to find me</div>
+        <div class="vb__links">
+          {links.map((link) => (
+            <a
+              href={link.href}
+              class={`lr${link.primary ? ' lr--primary' : ''}`}
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            >
+              <span class="lr__icon" set:html={icons[link.icon]} />
+              <span class="lr__label">{link.label}</span>
+              <span class="lr__meta">{link.meta}</span>
+              <span class="lr__chevron" set:html={chevron} />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="rise" data-d="5">
+        <CurrentlyBlock variant="b" />
+      </div>
+
+    </div>
+
+    <footer class="vb__footer">
+      <span>© 2026 Colin Domoney</span>
+    </footer>
+
+  </div>
+</div>

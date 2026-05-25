@@ -1,0 +1,88 @@
+---
+interface Props {
+  variant: 'a' | 'b';
+}
+const { variant } = Astro.props;
+---
+
+{variant === 'a' && (
+  <section class="currently">
+    <span class="currently__label">Currently</span>
+    <div class="currently__grid">
+      <div class="currently__item">
+        <h4>Working on</h4>
+        <p>
+          Building this site, which is either ironic or appropriate. Remembering the joy of PCB layouts
+          and initial board bringup and a flashing red LED. <strong>Day job:</strong> CTO and co-founder
+          at LibertiTec, building privacy infrastructure for organisations with a duty of care to the
+          people whose data they collect.
+        </p>
+      </div>
+      <div class="currently__item">
+        <h4>Reading</h4>
+        <p>
+          <em>Careless People</em> by Sarah Wynn-Williams — insider account of Facebook that Meta tried
+          hard to bury, which is reason enough. <em>When the World Sleeps: Stories, Words and Wounds of
+          Palestine</em> by Francesca Albanese — necessary and devastating. <em>Disgrace</em> by
+          J.M. Coetzee — finally. Bleak and beautifully spare.
+        </p>
+      </div>
+      <div class="currently__item">
+        <h4>Listening to</h4>
+        <p>
+          <em>Evolver</em> by Chris Liebing. <em>Mezzanine</em> by Massive Attack.
+          Beatport Top 100 — Today. The AI Daily Brief podcast.
+        </p>
+      </div>
+      <div class="currently__item">
+        <h4>Where</h4>
+        <p>
+          Liverpool — back from Barcelona for Tech for Palestine and the Global Sumud Flotilla.
+          May: Paris for a consulting gig. June: Brussels for the T4P conference, then Berlin
+          for Massive Attack at the Zitadelle.
+        </p>
+      </div>
+      <div class="currently__item" style="grid-column: 1 / -1">
+        <h4>On my mind</h4>
+        <p>
+          Hermes-Agent seems to have won the personal agents battle. Building an AI based secure
+          SDLC on a shoestring. Exploring Obsidian as my personal knowledge store.
+        </p>
+      </div>
+    </div>
+  </section>
+)}
+
+{variant === 'b' && (
+  <div class="vb__currently">
+    <div class="vb__section-label">Currently</div>
+    <h4>Working on</h4>
+    <p>
+      Building this site, which is either ironic or appropriate. Remembering the joy of PCB layouts
+      and initial board bringup and a flashing red LED. <strong>Day job:</strong> CTO and co-founder
+      at LibertiTec, building privacy infrastructure for organisations with a duty of care to the
+      people whose data they collect.
+    </p>
+    <h4>Reading</h4>
+    <p>
+      <em>Careless People</em> (Wynn-Williams) — insider account of Facebook that Meta tried hard to bury.
+      <em>When the World Sleeps</em> (Albanese) — necessary and devastating.
+      <em>Disgrace</em> (Coetzee) — finally. Bleak and beautifully spare.
+    </p>
+    <h4>Listening to</h4>
+    <p>
+      <em>Evolver</em> by Chris Liebing. <em>Mezzanine</em> by Massive Attack.
+      Beatport Top 100 — Today. The AI Daily Brief podcast.
+    </p>
+    <h4>Where</h4>
+    <p>
+      Liverpool — back from Barcelona for Tech for Palestine and the Global Sumud Flotilla.
+      May: Paris. June: Brussels then Berlin — Massive Attack at the Zitadelle.
+    </p>
+    <h4>On my mind</h4>
+    <p>
+      Hermes-Agent seems to have won the personal agents battle. Building an AI based secure
+      SDLC on a shoestring. Exploring Obsidian as my personal knowledge store.
+    </p>
+  </div>
+)}

@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+interface Props {
+  frontmatter: {
+    title?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title ?? 'CV — Colin Domoney'}>
+  <div class="cv__wrap">
+    <nav class="cv__nav">
+      <a href="/" class="cv__back">← Colin Domoney</a>
+      <a href="/cv.pdf" class="cv__download" download>Download PDF</a>
+    </nav>
+    <article class="cv__body">
+      <slot />
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,54 @@
+---
+import { profile, links, icons } from '@/data/links';
+import CurrentlyBlock from './CurrentlyBlock.astro';
+
+const chevron = icons.Chevron;
+---
+
+<div class="variant-a-root page">
+  <div class="va">
+
+    <div class="va__headshot rise" data-d="0">
+      <img src="/headshot.jpg" alt="Colin Domoney" width="120" height="120" />
+    </div>
+
+    <h1 class="va__name rise" data-d="1">Colin Domoney</h1>
+
+    <p class="va__role rise" data-d="2">
+      {profile.tagline}<span class="dot"></span>{profile.roles}
+    </p>
+
+    <p class="va__bio rise" data-d="3">
+      Thirty years in cybersecurity, now making the glass-half-full case for
+      <em style="font-style: italic; color: var(--teal-700);">Secure Vibecoding</em> —
+      an honest, optimistic take on AI-assisted development.
+    </p>
+
+    <div class="va__links rise" data-d="4">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class={`lb${link.primary ? ' lb--primary' : ''}`}
+          target={link.href.startsWith('http') ? '_blank' : undefined}
+          rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        >
+          <span class="lb__icon" set:html={icons[link.icon]} />
+          <span class="lb__label">
+            {link.label}
+            <span class="lb__sub">{link.sub}</span>
+          </span>
+          <span class="lb__chevron" set:html={chevron} />
+        </a>
+      ))}
+    </div>
+
+    <div class="rise" data-d="5" style="width: 100%">
+      <CurrentlyBlock variant="a" />
+    </div>
+
+    <footer class="va__footer rise" data-d="6">
+      © 2026 Colin Domoney
+    </footer>
+
+  </div>
+</div>

@@ -1,0 +1,33 @@
+---
+// Floating A/B toggle — remove this component from index.astro once you've decided on a variant
+---
+
+<button class="variant-toggle" id="variant-toggle" aria-label="Switch design variant">
+  <span id="variant-label">Toggle view</span>
+</button>
+
+<script>
+  const btn = document.getElementById('variant-toggle')!;
+  const label = document.getElementById('variant-label')!;
+
+  const STORAGE_KEY = 'bio-variant';
+  const saved = localStorage.getItem(STORAGE_KEY);
+
+  function apply(v: string) {
+    if (v === 'a') {
+      document.body.classList.add('show-variant-a');
+    } else {
+      document.body.classList.remove('show-variant-a');
+    }
+    label.textContent = 'Toggle view';
+  }
+
+  // Restore saved preference
+  if (saved) apply(saved);
+
+  btn.addEventListener('click', () => {
+    const next = document.body.classList.contains('show-variant-a') ? 'b' : 'a';
+    localStorage.setItem(STORAGE_KEY, next);
+    apply(next);
+  });
+</script>
