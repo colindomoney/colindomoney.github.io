@@ -1,0 +1,30 @@
+{
+  "updated": "2026-05-01",
+  "sections": [
+    {
+      "key": "working_on",
+      "title": "Working on",
+      "text": "Building this site, which is either ironic or appropriate. Remembering the joy of PCB layouts and initial board bringup and a flashing red LED. **Day job:** CTO and co-founder at LibertiTec, building privacy infrastructure for organisations with a duty of care to the people whose data they collect."
+    },
+    {
+      "key": "reading",
+      "title": "Reading",
+      "text": "*Careless People* by Sarah Wynn-Williams — insider account of Facebook that Meta tried hard to bury, which is reason enough. *When the World Sleeps: Stories, Words and Wounds of Palestine* by Francesca Albanese — necessary and devastating. *Disgrace* by J.M. Coetzee — finally. Bleak and beautifully spare."
+    },
+    {
+      "key": "listening",
+      "title": "Listening to",
+      "text": "*Evolver* by Chris Liebing. *Mezzanine* by Massive Attack. Beatport Top 100 — Today. The AI Daily Brief podcast."
+    },
+    {
+      "key": "where",
+      "title": "Where",
+      "text": "Liverpool — back from Barcelona for Tech for Palestine and the Global Sumud Flotilla. May: Paris for a consulting gig. June: Brussels for the T4P conference, then Berlin for Massive Attack at the Zitadelle."
+    },
+    {
+      "key": "on_my_mind",
+      "title": "On my mind",
+      "text": "Hermes-Agent seems to have won the personal agents battle. Building an AI based secure SDLC on a shoestring. Exploring Obsidian as my personal knowledge store."
+    }
+  ]
+}
