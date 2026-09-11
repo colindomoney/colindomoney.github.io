@@ -1,30 +1,30 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-09-11",
   "sections": [
     {
       "key": "working_on",
       "title": "Working on",
-      "text": "Submitted my first two PRs to Hermes Agent. Building a PoC for an agentic AI fundraiser website ... watch this space. Building the automation behind our next product ... also watch this space. **Day job:** CTO and co-founder at LibertiTec, building privacy infrastructure for organisations with a duty of care to the people whose data they collect."
+      "text": "Building Hermes Agent pipelines for an automated content generation engine with only minimal HITL, and an LLM bias classification engine. **Day job:** CTO and co-founder at LibertiTec, building privacy infrastructure for organisations with a duty of care to the people whose data they collect."
     },
     {
       "key": "reading",
       "title": "Reading",
-      "text": "*Careless People* by Sarah Wynn-Williams — insider account of Facebook that Meta tried hard to bury, which is reason enough. *Manufacturing Consent* by Herman and Chomsky — the classic analysis of how power shapes the news. *Disgrace* by J.M. Coetzee — finally. Bleak and beautifully spare."
+      "text": "*The Art of Focus: Find Meaning, Reinvent Yourself and Create Your Ideal Future* by Dan Koe. *Manufacturing Consent* by Herman and Chomsky — the classic analysis of how power shapes the news. *Disgrace* by J.M. Coetzee — finally. Bleak and beautifully spare."
     },
     {
       "key": "listening",
       "title": "Listening to",
-      "text": "*Evolver* by Chris Liebing. *Mezzanine* by Massive Attack. Beatport Top 100 — Today. *Sprinting Gazelle: Palestinian Songs from the Motherland and the Diaspora* by Reem Kelani — the British-Palestinian singer and researcher's 2006 debut, traditional songs and settings of poetry, and a thoughtful way into the repertoire."
+      "text": "\"Zombie\" by The Cranberries — the Springbok rugby sing-along song. \"We Found Love\" by Rihanna — if you've watched *Furious*, you'll get it. Beatport Top 100 — Today. *Sprinting Gazelle: Palestinian Songs from the Motherland and the Diaspora* by Reem Kelani — the British-Palestinian singer and researcher's 2006 debut, traditional songs and settings of poetry, and a thoughtful way into the repertoire."
     },
     {
       "key": "where",
       "title": "Where",
-      "text": "Liverpool — back from a sunny winter in Umhlanga Rocks. Planning a Lisbon trip early Autumn for a consulting gig. And ... maybe Cape Town for BSides early December."
+      "text": "Liverpool — back from a sunny winter in Umhlanga Rocks. Planning a Lisbon trip late Autumn for a consulting gig. And ... maybe Cape Town for BSides early December."
     },
     {
       "key": "on_my_mind",
       "title": "On my mind",
-      "text": "Investigating DHH's latest wonder — Omarchy. Finally getting to use my DGX Spark with Deepseek 4 Flash and Qwen-3.8-27B. Much to my immense shame becoming a bit of a fan of SuperGrok — don't judge me!"
+      "text": "Bored of Omarchy already — think I've found the orchestrator to rule them all ... Herdr, on my Herdr. Finally getting to use my DGX Spark with Deepseek 4 Flash and Qwen-3.8-27B."
     }
   ]
 }
