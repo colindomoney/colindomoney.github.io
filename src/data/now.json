@@ -4,7 +4,7 @@
     {
       "key": "working_on",
       "title": "Working on",
-      "text": "Building Hermes Agent pipelines for an automated content generation engine with only minimal HITL, and an LLM bias classification engine. **Day job:** CTO and co-founder at LibertiTec, building privacy infrastructure for organisations with a duty of care to the people whose data they collect."
+      "text": "Building a hardened CI/CD pipeline in GitHub and Forgejo. Exploring the state of the art in CI/CD security — loving Sandchest and Cloudflare security-audit. **Day job:** CTO and co-founder at LibertiTec, building privacy infrastructure for organisations with a duty of care to the people whose data they collect."
     },
     {
       "key": "reading",
